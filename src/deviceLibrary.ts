@@ -1,4 +1,5 @@
 import type { DeviceTemplate } from "./types";
+import { templates as uottawa } from "./devices/uottawa";
 import { templates as sources } from "./devices/sources";
 import { templates as switching } from "./devices/switching";
 import { templates as monitoring } from "./devices/monitoring";
@@ -27,6 +28,7 @@ import { DEVICE_TYPE_TO_CATEGORY } from "./deviceTypeCategories";
 export { DEVICE_TYPE_TO_CATEGORY };
 
 export const DEVICE_TEMPLATES: DeviceTemplate[] = [
+  ...uottawa,   // uOttawa AV Equipment Library — appears first in sidebar
   ...sources,
   ...switching,
   ...monitoring,

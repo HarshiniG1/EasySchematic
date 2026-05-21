@@ -1,5 +1,117 @@
 /** Canonical device type → category mapping. Shared by main app and devices app. */
 export const DEVICE_TYPE_TO_CATEGORY: Record<string, string> = {
+
+  // ── uOttawa Equipment Library ──────────────────────────────────────────────
+  // Audinate
+  "uottawa-audinate-dante-controller":    "uOttawa",
+  "uottawa-audinate-dante-gateway":       "uOttawa",
+  "uottawa-audinate-dante-avio-usb":      "uOttawa",
+  // Biamp
+  "uottawa-biamp-tesira-server":          "uOttawa",
+  "uottawa-biamp-tesira-forte":           "uOttawa",
+  "uottawa-biamp-devio":                  "uOttawa",
+  "uottawa-biamp-parlé":                  "uOttawa",
+  // Crestron – Audio
+  "uottawa-crestron-audio-dsp":           "uOttawa",
+  "uottawa-crestron-audio-amplifier":     "uOttawa",
+  "uottawa-crestron-audio-table-top":     "uOttawa",
+  // Crestron – BYOD
+  "uottawa-crestron-byod-airmedia":       "uOttawa",
+  "uottawa-crestron-byod-mercury":        "uOttawa",
+  // Crestron – Unified Communications
+  "uottawa-crestron-uc-teams":            "uOttawa",
+  "uottawa-crestron-uc-touch":            "uOttawa",
+  // Crestron – HDMI Tools
+  "uottawa-crestron-hdmi-switcher":       "uOttawa",
+  "uottawa-crestron-hdmi-da":             "uOttawa",
+  "uottawa-crestron-hdmi-extender":       "uOttawa",
+  // Crestron – Control
+  "uottawa-crestron-control-processor":   "uOttawa",
+  "uottawa-crestron-control-touchpanel":  "uOttawa",
+  "uottawa-crestron-control-relay":       "uOttawa",
+  // Crestron – NVX
+  "uottawa-crestron-nvx-encoder":         "uOttawa",
+  "uottawa-crestron-nvx-decoder":         "uOttawa",
+  // Crestron – Camera
+  "uottawa-crestron-camera-ptz":          "uOttawa",
+  "uottawa-crestron-camera-huddly-bundle":"uOttawa",
+  // Crestron – Misc.
+  "uottawa-crestron-misc-poe-injector":   "uOttawa",
+  "uottawa-crestron-misc-dm-card":        "uOttawa",
+  "uottawa-crestron-misc-power-supply":   "uOttawa",
+  // Extron
+  "uottawa-extron-switcher":              "uOttawa",
+  "uottawa-extron-scaler":                "uOttawa",
+  "uottawa-extron-da":                    "uOttawa",
+  "uottawa-extron-controller":            "uOttawa",
+  "uottawa-extron-dtp":                   "uOttawa",
+  // Sennheiser
+  "uottawa-sennheiser-ew-wireless":       "uOttawa",
+  "uottawa-sennheiser-team-connect":      "uOttawa",
+  "uottawa-sennheiser-speakerphone":      "uOttawa",
+  // Shure
+  "uottawa-shure-ulxd":                   "uOttawa",
+  "uottawa-shure-mxa":                    "uOttawa",
+  "uottawa-shure-p300":                   "uOttawa",
+  "uottawa-shure-mx-wired":               "uOttawa",
+  // Dell – PC
+  "uottawa-dell-pc-optiplex":             "uOttawa",
+  "uottawa-dell-pc-workstation":          "uOttawa",
+  // Dell – Display
+  "uottawa-dell-display-monitor":         "uOttawa",
+  "uottawa-dell-display-interactive":     "uOttawa",
+  // Dell – Accessories
+  "uottawa-dell-accessory-dock":          "uOttawa",
+  "uottawa-dell-accessory-webcam":        "uOttawa",
+  // Dell – Legacy PCs
+  "uottawa-dell-legacy-vostro":           "uOttawa",
+  "uottawa-dell-legacy-optiplex-old":     "uOttawa",
+  // Dell – Misc.
+  "uottawa-dell-misc-kvm":                "uOttawa",
+  "uottawa-dell-misc-cable-mgmt":         "uOttawa",
+  // Sharp
+  "uottawa-sharp-aquos-display":          "uOttawa",
+  "uottawa-sharp-interactive":            "uOttawa",
+  // Epson
+  "uottawa-epson-projector":              "uOttawa",
+  "uottawa-epson-short-throw":            "uOttawa",
+  // Teamboard
+  "uottawa-teamboard-interactive":        "uOttawa",
+  "uottawa-teamboard-ots":                "uOttawa",
+  // Samsung
+  "uottawa-samsung-display":              "uOttawa",
+  "uottawa-samsung-smartboard":           "uOttawa",
+  // QSC
+  "uottawa-qsc-core":                     "uOttawa",
+  "uottawa-qsc-amplifier":                "uOttawa",
+  "uottawa-qsc-touchscreen":              "uOttawa",
+  // Televic
+  "uottawa-televic-plixus-engine":        "uOttawa",
+  "uottawa-televic-plixus-unit":          "uOttawa",
+  "uottawa-televic-plixus-interpreter":   "uOttawa",
+  // Huddly
+  "uottawa-huddly-iq":                    "uOttawa",
+  "uottawa-huddly-go":                    "uOttawa",
+  "uottawa-huddly-l1":                    "uOttawa",
+  // Legacy – Kramer
+  "uottawa-legacy-kramer-switcher":       "uOttawa",
+  "uottawa-legacy-kramer-extender":       "uOttawa",
+  // Legacy – WolfVision
+  "uottawa-legacy-wolfvision-visualizer": "uOttawa",
+  // Legacy – Epiphan
+  "uottawa-legacy-epiphan-capture":       "uOttawa",
+  // Legacy – Panasonic
+  "uottawa-legacy-panasonic-projector":   "uOttawa",
+  "uottawa-legacy-panasonic-camera":      "uOttawa",
+  // Misc. – Adapters
+  "uottawa-misc-adapter-hdmi-vga":        "uOttawa",
+  "uottawa-misc-adapter-usbc-hdmi":       "uOttawa",
+  "uottawa-misc-adapter-dp-hdmi":         "uOttawa",
+  "uottawa-misc-adapter-minidp-hdmi":     "uOttawa",
+  "uottawa-misc-adapter-usba-ethernet":   "uOttawa",
+  "uottawa-misc-hdmi-cable":              "uOttawa",
+  // ──────────────────────────────────────────────────────────────────────────
+
   "camera": "Sources",
   "ptz-camera": "Sources",
   "camera-ccu": "Sources",

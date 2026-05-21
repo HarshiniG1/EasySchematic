@@ -91,6 +91,7 @@ const TEMPLATE_META_KEY = "easyschematic-custom-template-meta";
 const CATEGORY_ORDER_KEY = "easyschematic-category-order";
 
 export const CATEGORY_ORDER_DEFAULT: string[] = [
+  "uOttawa",      // University of Ottawa AV Equipment Library — pinned first
   "Sources",
   "Peripherals",
   "Switching",
